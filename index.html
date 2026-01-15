@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurpinder's Pizza</title>
 
-    <link rel="icon" href="images/6978255.png">
+    <!-- favicon -->
+    <link rel="icon" href="images/Pizza Logo.png"> 
+    
+    <!-- stylesheet -->
     <link rel="stylesheet" href="styles/pizza style.css">
 </head>
 
@@ -14,50 +17,51 @@
         <header>
             <img src="images/pizza guy.png" alt="pizza guy">
             <h1>Welcome to Gurpinder's Pizza</h1>
-            <h2>Serving GRC Students for</h2>
+            <h2>Serving GRC Students for 50 Years</h2>
+            <hr>
             <p>Come check us out</p>
         </header>
 
         <form id="pizza-form" action="#" method="get">
+            
             <!-- Contact Info -->
             <fieldset>
                 <legend>Contact Info</legend>
-
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname">
 
-                <label for="Lname">Last Name:</label>
+                <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname">
 
-                <label for="Lname">Email <address></address>:</label>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
             </fieldset>
             
+            <!-- Pickup or Delivery -->
+            <fieldset>
+                <legend>Select Pickup or Delivery</legend>
+                <label for="pickup">
+                    <input type="radio" id="pickup" name="method" value="pickup"> Pickup
+                </label>
+                <label for="delivery">
+                    <input type="radio" id="delivery" name="method" value="delivery"> Delivery
+                </label>
+            </fieldset>  
 
-            <!-- Pickup or delivery -->
-<fieldset>
-    <legend>Select Pickup or delievery</legend>
-    <label for="pickup">
-        <input type="radio"
-        id="pickup" 
-        name="method" 
-        value="pickup">pickup
-    </label>
-    <label for="delievery">
-        <input type="radio"  
-        name="method" 
-        id="delievery" 
-        value="delievery">delievery
-    </label>
-</fieldset>
-
-    <!--- Submit button -->
-    <button type ="submit" id = "order-button"> Place Order</button>
-    </form>
-</main> 
-
-                   
-                </select>
+            <!-- Toppings -->
+            <fieldset>
+                <legend>Select Toppings</legend>
+                
             </fieldset>
+            
+            <!-- Pizza Size -->
+            <fieldset>
+                <legend>Pizza Size</legend>
+                <!-- You can add radio buttons or dropdown here later -->
+            </fieldset>
+
+            <!-- Submit button -->
+            <button type="submit" id="order-button">Place Order</button>
         </form>
     </main>
 </body>
