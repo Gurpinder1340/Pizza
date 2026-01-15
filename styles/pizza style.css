@@ -63,7 +63,7 @@ input[type="text"], input[type="email"], textarea, select {
     padding: .75rem;
 }
 
-/* All placeholder attributes */
+ 
 ::placeholder {
     font-size: 1rem;
 }
@@ -86,4 +86,12 @@ label {
     display: block;
     padding-bottom: .5rem;
     margin-top: 0.5em;
+}
+
+input [type="text"], textarea, select{
+    width: 100%;
+    border: 1px solid rgb(20,20,20);
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    padding: .75em;
 }
